@@ -1,22 +1,21 @@
-/**
- * =============================================================
- * MAIN CLASS - UseCase2PalindromeCheckerApp
- * =============================================================
- *
- * Use Case 2: Hardcoded Palindrome Validation
- *
- * Goal:
- * Display whether a hardcoded string is a palindrome.
- *
- * Data Structure Used: String
- */
-
-public class UseCase2PalindromeCheckerApp {
-
-    // Main Method – Entry point of Java program
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class Main {
     public static void main(String[] args) {
 
-        // Hardcoded String Literal
+        // Welcome message
+        System.out.printf("Hello and welcome!\n\n");
+
+        // Existing loop
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("i = " + i);
+        }
+
+        // ---- Added Palindrome Logic Below ----
+
+        System.out.println("\nChecking Hardcoded Palindrome...\n");
+
+        // Hardcoded string
         String input = "madam";
 
         boolean isPalindrome = true;
@@ -30,13 +29,13 @@ public class UseCase2PalindromeCheckerApp {
             }
         }
 
-        // Conditional Statement (if-else)
+        // Print result
         if (isPalindrome) {
             System.out.println("Result: " + input + " is a Palindrome.");
         } else {
             System.out.println("Result: " + input + " is NOT a Palindrome.");
         }
 
-        // Program exits automatically after execution
+        System.out.println("\nProgram Finished.");
     }
 }
